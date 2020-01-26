@@ -15,6 +15,7 @@
 
     {{ with .Site.Params.subtitle }}
         <h2 class="home-description">
+            <b>Restu Muzakir</b>
             {{ $id := md5 . | printf "tp-%s" }}
             <div id={{ printf "r%s" $id }} hidden=true>{{ . | safeHTML }}</div>
             <div id={{ $id }} class="typeit"></div>
